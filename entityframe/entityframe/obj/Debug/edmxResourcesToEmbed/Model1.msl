@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PizzeriaModelContainer" CdmEntityContainer="PizzeriaEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="PizzeriaModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="ID_Client" ColumnName="ID_Client" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="TypeOfPay" ColumnName="TypeOfPay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="PizzeriaModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Orders" ColumnName="ID_Orders" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Personal_ID" ColumnName="Personal_ID" />
+          <ScalarProperty Name="Pizza_ID" ColumnName="Pizza_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personals">
+      <EntityTypeMapping TypeName="PizzeriaModel.Personal">
+        <MappingFragment StoreEntitySet="Personal">
+          <ScalarProperty Name="ID_Personal" ColumnName="ID_Personal" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pizzas">
+      <EntityTypeMapping TypeName="PizzeriaModel.Pizza">
+        <MappingFragment StoreEntitySet="Pizza">
+          <ScalarProperty Name="ID_Pizza" ColumnName="ID_Pizza" />
+          <ScalarProperty Name="PizzaName" ColumnName="PizzaName" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

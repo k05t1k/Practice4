@@ -1,0 +1,15 @@
+C:\Users\cutec\source\dataset\dataset\bin\Debug\dataset.exe.config
+C:\Users\cutec\source\dataset\dataset\bin\Debug\dataset.exe
+C:\Users\cutec\source\dataset\dataset\bin\Debug\dataset.pdb
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset.csproj.AssemblyReference.cache
+C:\Users\cutec\source\dataset\dataset\obj\Debug\MainWindow.g.cs
+C:\Users\cutec\source\dataset\dataset\obj\Debug\App.g.cs
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset_MarkupCompile.cache
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset_MarkupCompile.lref
+C:\Users\cutec\source\dataset\dataset\obj\Debug\MainWindow.baml
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset.g.resources
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset.Properties.Resources.resources
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset.csproj.GenerateResource.cache
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset.csproj.CoreCompileInputs.cache
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset.exe
+C:\Users\cutec\source\dataset\dataset\obj\Debug\dataset.pdb

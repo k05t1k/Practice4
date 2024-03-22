@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PizzeriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ID_Client" />
+    </Key>
+    <Property Name="ID_Client" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TypeOfPay" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Client_I__3D5E1FD2" FromRole="Client" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="ID_Orders" />
+    </Key>
+    <Property Name="ID_Orders" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Client_ID" Type="Int32" Nullable="false" />
+    <Property Name="Personal_ID" Type="Int32" Nullable="false" />
+    <Property Name="Pizza_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK__Orders__Client_I__3D5E1FD2" FromRole="Orders" ToRole="Client" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK__Orders__Personal__3E52440B" FromRole="Orders" ToRole="Personal" />
+    <NavigationProperty Name="Pizza" Relationship="Self.FK__Orders__Pizza_ID__3F466844" FromRole="Orders" ToRole="Pizza" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="ID_Personal" />
+    </Key>
+    <Property Name="ID_Personal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Post" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Personal__3E52440B" FromRole="Personal" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Pizza">
+    <Key>
+      <PropertyRef Name="ID_Pizza" />
+    </Key>
+    <Property Name="ID_Pizza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PizzaName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Size" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__Pizza_ID__3F466844" FromRole="Pizza" ToRole="Orders" />
+  </EntityType>
+  <Association Name="FK__Orders__Client_I__3D5E1FD2">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ID_Client" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Personal__3E52440B">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="ID_Personal" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Personal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Pizza_ID__3F466844">
+    <End Role="Pizza" Type="Self.Pizza" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pizza">
+        <PropertyRef Name="ID_Pizza" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Pizza_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PizzeriaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Personals" EntityType="Self.Personal" />
+    <EntitySet Name="Pizzas" EntityType="Self.Pizza" />
+    <AssociationSet Name="FK__Orders__Client_I__3D5E1FD2" Association="Self.FK__Orders__Client_I__3D5E1FD2">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Personal__3E52440B" Association="Self.FK__Orders__Personal__3E52440B">
+      <End Role="Personal" EntitySet="Personals" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Pizza_ID__3F466844" Association="Self.FK__Orders__Pizza_ID__3F466844">
+      <End Role="Pizza" EntitySet="Pizzas" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

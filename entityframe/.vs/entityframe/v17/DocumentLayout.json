@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cutec\\source\\entityframe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|c:\\users\\cutec\\source\\entityframe\\entityframe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|solutionrelative:entityframe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|C:\\Users\\cutec\\source\\entityframe\\entityframe\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|solutionrelative:entityframe\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|C:\\Users\\cutec\\source\\entityframe\\entityframe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|solutionrelative:entityframe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|C:\\Users\\cutec\\source\\entityframe\\entityframe\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{BA191B6A-247D-4380-B3F8-7725C952D603}|entityframe\\entityframe.csproj|solutionrelative:entityframe\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "entityframe\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\MainWindow.xaml.cs",
+              "RelativeToolTip": "entityframe\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAswEUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:56:14.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\Order.cs",
+              "RelativeDocumentMoniker": "entityframe\\Order.cs",
+              "ToolTip": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\Order.cs",
+              "RelativeToolTip": "entityframe\\Order.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:44:55.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\Model1.edmx",
+              "RelativeDocumentMoniker": "entityframe\\Model1.edmx",
+              "ToolTip": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "entityframe\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-03-22T01:58:07.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "entityframe\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\cutec\\source\\entityframe\\entityframe\\MainWindow.xaml",
+              "RelativeToolTip": "entityframe\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-22T01:56:14.441Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
